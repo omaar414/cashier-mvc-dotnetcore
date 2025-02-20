@@ -1,0 +1,24 @@
+# Ignorar archivos de configuración con credenciales
+appsettings.json
+appsettings.Development.json
+
+# Carpetas generadas automáticamente
+bin/
+obj/
+node_modules/
+.vscode/
+wwwroot/
+
+# Archivos de configuración de usuario
+*.user
+*.suo
+*.swp
+*.psess
+*.sln.docstates
+
+# Archivos de compilación y paquetes
+*.dll
+*.exe
+*.pdb
+*.lock.json
+*.nuget/

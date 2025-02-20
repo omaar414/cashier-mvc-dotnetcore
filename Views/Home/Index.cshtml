@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@model List<Purchase>
+<div class="text-center">
+
+    <div class="text-end"> 
+        <a asp-action="Storage" class="btn btn-primary btn-lg rounded-pill shadow px-5 py-3 fs-4 mb-2">
+            Storage <i class="fas fa-box"></i>
+        </a> 
+        <br>
+        <a asp-action="Transaction" class="btn btn-success btn-lg rounded-pill shadow px-5 py-3 fs-4">
+            New Transaction <i class="fas fa-plus-circle"></i>
+        </a> 
+        
+    </div>
+    <br>
+    <h1 class="display-4 fw-bold">Cashier App</h1>
+    <br>
+    <hr>
+    <h2>Purchase Record</h2>
+    <br>
+    <table class="table table-striped shadow-lg ">
+        <thead class="table-dark">
+            <tr>
+                <th>Date</th>
+                <th>Total Amount</th>
+                <th>Total Items</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach (var purchase in Model)
+           {
+            <tr>
+                <td>@purchase.Date</td>
+                <td>@purchase.TotalAmount.ToString("C2")</td>
+                <td>@purchase.TotalItems</td>
+                <td> <a asp-action="EditPurchase" asp-route-id="@purchase.Id" class="btn btn-sm btn-danger">Delete</a> </td>
+            </tr>
+           }
+        </tbody>
+
+    </table>
+</div>
+
+
