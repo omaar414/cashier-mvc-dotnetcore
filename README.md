@@ -11,26 +11,6 @@ A simple cashier system built using ASP.NET Core MVC with Entity Framework Core 
 	•	PostgreSQL: Database management system.
 	•	Bootstrap UI: Responsive UI using Bootstrap.
 
-📂 Project Structure
-
-Cashier/
-│-- Controllers/          # Handles application logic
-│   ├── HomeController.cs
-│-- Data/                # Database context and migrations
-│-- Models/              # Data models
-│   ├── Item.cs
-│   ├── Purchase.cs
-│   ├── StorageViewModel.cs
-│   ├── TransactionViewModel.cs
-│-- Views/               # Frontend pages (Razor views)
-│   ├── Home/
-│   ├── Storage/
-│   ├── Transaction/
-│-- wwwroot/             # Static files (CSS, JS, images)
-│-- appsettings.json      # Configuration file (database connection)
-│-- Program.cs           # Application entry point
-│-- Cashier.csproj       # Project definition file
-│-- .gitignore           # Files to ignore in version control
 
 ⚙️ Installation & Setup
 
