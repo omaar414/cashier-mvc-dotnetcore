@@ -47,8 +47,6 @@ export DB_USERNAME="your_username"
 export DB_PASSWORD="your_password"
 
 
-	•	Update the connection string in appsettings.json (already ignored in .gitignore):
-
 "ConnectionStrings": {
   "DefaultConnection": "Host=localhost;Port=5432;Database=cashierdb;Username={DB_USERNAME};Password={DB_PASSWORD}"
 }
@@ -65,6 +63,19 @@ dotnet ef database update
 4️⃣ Run the Application
 
 dotnet run
+
+
+### 📸 Screenshots
+
+#### 📍 Home View
+![Home View](https://github.com/user-attachments/assets/5ec68341-9469-4db9-b875-68d0a9a0e705)
+
+#### 📍 Storage View
+![Storage View](https://github.com/user-attachments/assets/68919dcc-38b4-468d-b81b-72f23a22272d)
+
+#### 📍 Transaction View
+![Transaction View](https://github.com/user-attachments/assets/fec3148e-a24c-4a6b-997b-9e74e0ee6337)
+
 
 🛠 Technologies Used
 	•	ASP.NET Core MVC (Backend Framework)
