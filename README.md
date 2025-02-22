@@ -1,4 +1,4 @@
-Cashier MVC - .NET Core
+Cashier MVC - ASP.NET Core MVC
 
 A simple cashier system built using ASP.NET Core MVC with Entity Framework Core and PostgreSQL. This project simulates a basic transaction system where users can add items to a cart, store inventory, process purchases, and track transactions.
 
